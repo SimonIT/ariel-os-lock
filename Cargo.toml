@@ -1,0 +1,19 @@
+[package]
+name = "ariel-os-lock"
+version = "0.1.0"
+authors = ["SimonIT <simonit.orig@gmail.com>"]
+description = "Adaptation of lock_api for Ariel OS threads"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/SimonIT/ariel-os-lock"
+readme = "README.md"
+documentation = "https://docs.rs/ariel-os-lock"
+keywords = ["mutex", "rwlock", "lock", "no_std"]
+categories = ["concurrency", "no-std"]
+edition = "2024"
+
+[dependencies]
+lock_api = "0.4.13"
+ariel-os-threads = { git = "https://github.com/ariel-os/ariel-os.git", tag = "v0.2.1" }
+
+[dev-dependencies]
+critical-section = { version = "1.2.0", features = ["std"] }
