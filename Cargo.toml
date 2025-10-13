@@ -13,7 +13,10 @@ edition = "2024"
 
 [dependencies]
 lock_api = "0.4.13"
-ariel-os-threads = { git = "https://github.com/ariel-os/ariel-os.git", tag = "v0.2.1" }
+ariel-os-threads = "0.2.0"
 
 [dev-dependencies]
 critical-section = { version = "1.2.0", features = ["std"] }
+
+[patch.crates-io]
+ariel-os-threads = { git = "https://github.com/ariel-os/ariel-os.git", tag = "v0.2.1" }
