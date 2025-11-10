@@ -66,6 +66,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - run: cargo generate-lockfile
       - name: Cargo Audit
         uses: rustsec/audit-check@v2
         with:
